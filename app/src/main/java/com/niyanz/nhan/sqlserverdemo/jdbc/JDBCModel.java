@@ -19,13 +19,17 @@ public class JDBCModel {
         StrictMode.setThreadPolicy(policy);
         Connection objConn = null;
         String sConnURL = null;
-        JDBCObject objEntity = new JDBCObject("DESKTOP-LP0P2MA\\SQLEXPRESS", "henchiyb",
-                "1234", "SqlServerDemo", "1433");
+        JDBCObject objEntity = new JDBCObject("192.168.100.101",
+                "un",
+                "1",
+                "SqlServerDemo",
+                "1433");
         try {
             Class.forName(objEntity.getsClass());
             sConnURL = "jdbc:jtds:sqlserver://"
                     + objEntity.getsServerName() + ":" + objEntity.getsPrort() + ";"
                     + "databaseName=" + objEntity.getsDatabase()
+//                    + ";";
                     + ";user=" + objEntity.getsUserId()
                     + ";password=" + objEntity.getsPwd() + ";";
             objConn = DriverManager.getConnection(sConnURL);

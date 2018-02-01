@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SqlServerDemo.iml" filepath="$PROJECT_DIR$/SqlServerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SqlServerConnect.iml" filepath="$PROJECT_DIR$/SqlServerConnect.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

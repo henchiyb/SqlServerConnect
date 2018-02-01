@@ -5,28 +5,37 @@ package com.niyanz.nhan.sqlserverdemo;
  */
 
 public class User {
-    private String Name;
-    private int ID;
+    private String userName;
+    private String password;
+    private int id;
 
-    public User(String name, int ID) {
-        Name = name;
-        this.ID = ID;
+    public User(int id, String name, String pass) {
+        userName = name;
+        this.id = id;
+        this.password = pass;
     }
 
-    public int getID() {
-        return ID;
+    public int getId() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getName() {
-        return Name;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
